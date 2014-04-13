@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="hu.geza.jsoncreator.MainActivity">
+
+    <TextView
+        android:layout_margin="15dp"
+        android:id="@+id/key_label"
+        android:layout_alignBaseline="@+id/key_input"
+        android:text="@string/key_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_margin="15dp"
+        android:id="@+id/value_label"
+        android:layout_alignBaseline="@+id/value_input"
+        android:layout_below="@id/key_label"
+        android:text="@string/value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="@string/hint_key"
+        android:id="@+id/key_input"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@id/key_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:hint="@string/hint_value"
+        android:id="@+id/value_input"
+        android:layout_below="@id/key_input"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@id/key_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="OnAddButtonClicked"
+        android:id="@+id/btn_add"
+        android:text="@string/btn_add"
+        android:layout_below="@id/value_input"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="OnDoneButtonClicked"
+        android:id="@+id/btn_done"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_add"
+        android:text="@string/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

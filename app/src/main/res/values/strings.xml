@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JsonCreator</string>
+    <string name="key_label">Key: </string>
+    <string name="action_settings">Új JSON!</string>
+    <string name="value_label">Value: </string>
+    <string name="btn_add">Tedd bele!</string>
+    <string name="show">Mutasd!</string>
+    <string name="hint_key">Add a key for JSON</string>
+    <string name="hint_value">Add a value for that key</string>
+    <string name="title_activity_display">DisplayActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="copy">Másol</string>
+
+</resources>
